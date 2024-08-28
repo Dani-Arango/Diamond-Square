@@ -1,1 +1,114 @@
 /* You can add global styles to this file, and also import other style files */
+/* Contenedor principal */
+.main-container {
+  padding: 20px 40px 20px 40px;
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Contenedor de la cuadrícula */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  width: 100%;
+  gap: 20px;
+}
+
+/* Secciones de 2D y 3D */
+.section {
+  text-align: center;
+}
+
+.subsection {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+.subsection:first-of-type {
+  margin-bottom: 20px;
+}
+
+/* Títulos de 2D y 3D */
+.subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Canvas */
+canvas {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Sección de formularios */
+.form-container {
+  background-color: #fff;
+  padding: 5vh;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+@media (min-width: 1000px) {
+  /* Sección de formularios */
+  .form-container {
+    padding: 20vh;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 20px;
+  }
+
+  .main-container {
+    padding: 20px 100px 20px 100px;
+  }
+}
+
+/* Entrada de número */
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Botón */
+.reset-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #0056b3;
+}

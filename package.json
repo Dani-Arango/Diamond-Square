@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "daarangoc": "ng serve --host 192.168.2.106 --port 2424",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -18,7 +18,9 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "@types/three": "^0.167.2",
     "rxjs": "~7.8.0",
+    "three": "^0.167.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
